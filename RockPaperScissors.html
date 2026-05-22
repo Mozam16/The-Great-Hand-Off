@@ -3,17 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Rock-Paper-Scissors</title>
+
 </head>
 <body>
-    <h1> Rock-Paper-Scissors</h1>
-    <span> COMPUTER<p class="computerChoice"></p></span>
-    <span> PLAYER<p class="playerChoice"></p></span>
-    <span> RESULT<p class="result"></p></span>
+    <main>
+        <h1> Rock Paper Scissors</h1>
 
-   <button onclick="play('rock')">Rock</button>
-   <button onclick="play('paper')">Paper</button>
-   <button onclick="play('scissors')" >Scissors</button>
+        <div class = "container">
+                <header>
+                    <span> COMPUTER<p class="computerChoice"></p></span>
+                    <span> PLAYER<p class="playerChoice"></p></span>
+                    
+                </header>
+
+                <div class="btn-container"> 
+
+                    <div class="block1">
+                        <span> RESULT<p class="result"></p></span>   
+                    </div>
+
+                    <div class="block2">
+                        <button onclick="play('✊', this)">Rock✊</button>
+                        <button onclick="play('✋', this)">Paper✋</button>
+                        <button onclick="play('✌', this)" >Scissors✌</button>
+                    </div>
+                </div>
+        </div>
+
+    </main> 
 
 <script src="RockPaperScissors.js"></script>
 
